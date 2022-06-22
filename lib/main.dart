@@ -8,8 +8,8 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await PCacheImage.init();
   PImageService.settings(
-    maxCacheSize: 50 * 1024 * 1024,
-    maxImages: 10,
+    maxCacheSize: 100 * 1024 * 1024,
+    maxImages: 20,
   );
   runApp(const MyApp());
 }
